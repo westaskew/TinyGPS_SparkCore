@@ -49,8 +49,8 @@
         google.maps.event.addDomListener(window, 'load', initialize);
 		
 		function start() {
-			var deviceID = "<<devideid>>";
-			var accessToken = "<<accesstoken>>";
+			var deviceID = "3f0035000e51343035353132";
+			var accessToken = "a14393710f8aa8c8d1a22a2306f09acc040e5ad5";
 			var eventSource = new EventSource("https://api.spark.io/v1/devices/" + deviceID + "/events/?access_token=" + accessToken);
 
 			eventSource.addEventListener('open', function(e) {
